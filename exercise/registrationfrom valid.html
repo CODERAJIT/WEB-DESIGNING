@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 500px;
+            height: 35px;
+            border-radius: 5px;
+            border: 2px solid grey;
+            font-size: 20px;
+        }
+
+        #btn {
+            background-color: brown;
+            color: beige;
+            font-size: 20px;
+            border-radius: 0px 50px;
+            font-style: italic;
+            letter-spacing: 2px;
+
+        }
+
+        #btn:hover {
+            background-color: aqua;
+            color: black;
+            font-style: italic;
+            letter-spacing: 2px;
+
+        }
+        span{
+            color: red;
+            /* background-color: black; */
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" autocomplete="off" onsubmit="return validation()">
+        <table cellspacing="15" align="center">
+            <H1 style="text-align: center;">
+                VALID REGISTRATION FORM
+            </H1>
+            <tr>
+                <td><input type="text" name="" id="user" placeholder="user"> <br><span id="userr"></span></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="" id="location" placeholder="location">
+                  <br>  <span id="loc"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="" id="age" placeholder="Age"> <br><span id="ages"></span></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" name="" id="email" placeholder="email">
+                   <br> <span id="emai"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="" id="pass" placeholder="password">
+                   <br> <span id="passw"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="" id="conpass" placeholder="confrim password"> <br> <span id="connpass"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="" id="btn"></td>
+            </tr>
+
+        </table>
+    </form>
+    <script>
+        function validation() {
+            var user = document.getElementById("user").value;
+            var location = document.getElementById("location").value;
+            var age = document.getElementById("age").value;
+            var password = document.getElementById("pass").value;
+            var email = document.getElementById("email").value;
+            var conpass = document.getElementById("conpass").value;
+            if (user == "") {
+                document.getElementById("userr").innerHTML = " ** please enter  your name **";
+            }
+            if (location == "") {
+                document.getElementById("loc").innerHTML = " ** please enter  your location **";
+            }
+            if (age == "") {
+                document.getElementById("ages").innerHTML = " ** please enter  your age **";
+            }
+            if (email == "") {
+                document.getElementById("emai").innerHTML = " ** please enter  your email **";
+            }
+            if (password == "") {
+                document.getElementById("passw").innerHTML = " ** please enter  your password **";
+            }
+            if (conpass == "") {
+                document.getElementById("connpass").innerHTML = " ** please enter  your confrim  password **";
+            }
+            if (location == "") {
+                document.getElementById("loc").innerHTML = " ** please enter  your location **";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> --> 
+    <title>calculator</title>
+    <style>
+        .main {
+width: 300px;
+margin: 5px auto;
+border-top: none;
+margin-top: 100px;
+border: 1px solid black;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+}
+table{
+    width: 100%;
+}
+td{
+    width:25%;
+}
+#calbody{
+     margin-top: 5px;
+     border-top: 1px dotted rgb(88, 86, 86);
+     
+
+}
+input[type=button]{
+    width:100%;
+    background-color: rgb(47, 17, 117);
+    color: white;
+    height: 60px;
+    font-size: 30px;
+    border: 2px solid red;
+
+
+}
+input[type="text"] {
+    width: 98%;
+    height: 100px;
+    border: 1px solid black;
+    border-bottom-left-radius: 0px;
+    background-color: aquamarine;
+    color: black;
+    font-size: 30px;
+    border-radius: 28px;
+    font-weight: 700;
+    text-align: right;
+
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <table>
+            <tr>
+                <input type="text" name="" id="input">
+                
+            </tr>
+            
+            <div id="calbody">
+                
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="C" onclick="clearesult()">
+                    </td>
+                    <td>
+                        <input type="button" value="dlt" onclick="deletenum()">
+                    </td>
+                    <td>
+                        <input type="button" value="/" onclick="number('/')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="7" onclick="number('7')">
+                    </td>
+                    <td>
+                        <input type="button" value="8" onclick="number('8')">
+                    </td>
+                    <td>
+                        <input type="button" value="9" onclick="number('9')">
+                    </td>
+                    <td>
+                        <input type="button" value="x" onclick="number('*')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="4" onclick="number('4')">
+                    </td>
+                    <td>
+                        <input type="button" value="5" onclick="number('5')">
+                </td>
+                <td>
+                    <input type="button" value="6" onclick="number('6')">
+                </td>
+                <td>
+                    <input type="button" value="+" onclick="number('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="number('1')">
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="number('2')">
+                </td>
+                <td>
+                    <input type="button" value="3" onclick="number('3')">
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="number('-')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="0" onclick="number('0')">
+                </td>
+                <td>
+                    <input type="button" value="." onclick="number('.')">
+                </td>
+                <td>
+                    <input type="button" value="="  onclick="result()">
+                </td>
+                <td>
+                    <input type="button" value="%" onclick="number('%')">
+                </td>
+            </tr>
+        </div>
+        </table>
+    </div>
+    <script >
+        // get number
+function number(num) {
+    var result=document .getElementById("input") ;
+    result.value=result.value+num;
+}
+// get clear
+function clearesult() {
+    var result=document  .getElementById("input") ;
+    result.value="";
+    result.style.textAlign="right";
+    result.style.color="black";
+}
+// get result
+function result() {
+    var result=document .getElementById("input") ;
+    result.value=eval( result.value);
+    result.style.color="red";
+    result.style.textAlign="center";
+    result.style.fontStyle="sans-serif";
+}
+// get delete
+function deletenum(){
+    var result=document .getElementById("input") ;
+     var remove = result.value;
+     remove= remove.slice(0,-1);
+     result.value = remove;
+     result.style.textAlign="right";
+    result.style.color="black";
+
+
+}
+
+    </script>
+</body>
+
+</html>

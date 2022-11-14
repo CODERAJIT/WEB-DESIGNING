@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>bootstrap assignment</title>
+    <style>
+        /* css reset */
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Alumni Sans Pinstripe', sans-serif;
+            height: 100vh;
+        }
+
+        header {
+            font-family: 'DynaPuff', cursive;
+            font-family: 'Silkscreen', cursive;
+        }
+
+        header h3 {
+            float: left;
+            font-size: 30px;
+        }
+
+        header h3 {
+            --animate-duration: 1000ms;
+            --animate-delay: 0.20s;
+        }
+
+        .right {
+            position: absolute;
+            top: -24px;
+            right: 10px;
+            display: block;
+            width: 48%;
+            font-size: 62px;
+            font-weight: 1000;
+
+        }
+
+        @media only screen and (max-width:800px) {
+            .navbar {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100px;
+                left: 10px;
+            }
+        }
+
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .haed h1 {
+            --animate-duration: 1000ms;
+            --animate-delay: 0.20s;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: chocolate;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: 400;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+
+
+        }
+
+        .navbar li a:active {
+            color: aqua;
+
+        }
+
+        .navbar li button {
+            border: 1px solid navy;
+            border-radius: 5px;
+            color: navy;
+            width: 81px;
+            height: 41px;
+            font-size: 17px;
+        }
+
+        .navbar li button:hover {
+            background-color: #00A4EF;
+
+        }
+
+        .body h1 {
+            text-align: center;
+            font-size: 55px;
+            padding-top: 35px;
+            font-family: 'Kanit', sans-serif;
+
+        }
+
+        body p {
+            width: 60%;
+            margin: 36px auto;
+            font-size: 25px;
+            text-align: center;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .container {
+            width: 92%;
+            margin: auto 150px;
+        }
+
+
+        .pricing-plan {
+            padding: 10px 40px;
+
+
+        }
+
+        .plan {
+            box-shadow: 1px 1px 2px GREY;
+            border: 1px solid grey;
+            height: 300px;
+            width: 260px;
+            display: block;
+            margin: 1px 38px;
+            padding: 0px 0px;
+
+        }
+
+        .plan1,
+        .plan2,
+        .plan3 {
+            margin: 0px;
+            padding: 0px;
+            width: 258px;
+            overflow: hidden;
+            font-size: 20px;
+            text-align: center;
+            line-height: 2;
+            font-weight: bold;
+            background-color: whitesmoke;
+            border-bottom: 1px solid grey;
+        }
+
+
+
+        .summary {
+            width: 230px;
+            text-align: center;
+            padding: 0px 0px;
+        }
+
+        .pricing-summary li {
+            list-style: none;
+        }
+
+
+
+        .rate1 {
+            font-size: 27px;
+            position: relative;
+            top: 10px;
+        }
+
+        .dollar {
+            font-weight: bold;
+        }
+
+        .month {
+            font-size: 22px;
+        }
+
+        .feature {
+            font-size: 15px;
+            font-weight: 600;
+            position: relative;
+            top: 20px;
+            font-family: 'Alumni Sans Pinstripe', sans-serif;
+            font-family: 'DynaPuff', cursive;
+            font-family: 'Silkscreen', cursive;
+        }
+
+        li .btn {
+            position: relative;
+            top: 50px;
+            border: 1px solid cyan;
+            height: 45px;
+            width: 185px;
+            color: #ffff;
+            background-color: #00A4EF;
+            font-size: 20px;
+            border-radius: 10px;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        li .btn:hover {
+            background-color: white;
+            color: #007598;
+        }
+
+        footer {
+            text-align: center;
+
+        }
+
+        footer img {
+            border-radius: 5px;
+        }
+
+        .fr1 {
+            padding: 10px 0px;
+            display: block;
+
+        }
+
+        .fs1 {
+            position: relative;
+            transform: translatex(35px);
+            margin: 5px 10px;
+            display: block;
+        }
+
+        .foot {
+            padding: 0px 0px;
+            margin: 0px 32px;
+        }
+
+        .hed {
+            font-size: 18px;
+            font-weight: 700;
+            font-style: bold;
+            font-family: ui-serif;
+
+        }
+
+        .features,
+        .resources,
+        .about {
+            font-size: 17px;
+            text-align: left;
+            margin: -6px 57px;
+            padding: 13px 12px;
+            width: 185px;
+            font-family: emoji;
+        }
+
+        .about {
+            margin-left: 65px;
+        }
+
+        .resources {
+            margin-left: 51px;
+        }
+
+        .features {
+            margin-left: 57px;
+        }
+
+        .features li,
+        .resources li,
+        .about li {
+            list-style: none;
+
+
+        }
+
+        .features li a,
+        .resources li a,
+        .about li a {
+            color: grey;
+            line-height: 25px;
+
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <h3 class="animate__heartBeat">company name</h3>
+        <div class="right">
+            <ul class="navbar ">
+                <li> <a href="http:#" target="_blank">Features</a> </li>
+                <li> <a href="http:#" target="_blank">Enterprise</a> </li>
+                <li> <a href="http:#" target="_blank"> Support</a></li>
+                <li> <a href="http:#" target="_blank">Pricing</a> </li>
+                <li> <button type="button">Sign up</button></li>
+            </ul>
+    </header>
+    <hr style="margin-top: 95px; width: 100%;">
+    </div>
+    <section>
+        <div class="body">
+            <div class="head">
+                <h1 class=" animate__animated animate__bounce animate__delay-20s">pricing</h1>
+                <p>quickly build an effective pricing table for your potential customers with this bootstrap example
+                    .its
+                    built with default bootstrap components and utilites with little customzation </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class=" row pricing-plan">
+                <div class=" col-lg-4 col-xs-10 plan">
+                    <h1 class="  plan1">Free</h1>
+                    <div class="summary">
+                        <ul class="pricing-summary">
+                            <li> <span class="rate1"> <span class="dollar">&dollar; 0</span> <span class="month">/
+                                        mo</span></span></li>
+                            <li class="feature">10 users included</li>
+                            <li class="feature">2 GB storage</li>
+                            <li class="feature">Email support</li>
+                            <li class="feature">Help center access</li>
+                            <li> <button class="btn" type="button">Sign up for free</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-lg-4 col-xs-10 plan">
+                    <h1 class="plan2">Pro</h1>
+                    <div class="summary">
+                        <ul class="pricing-summary">
+                            <li> <span class="rate1"> <span class="dollar">&dollar; 15</span> <span class="month">/
+                                        mo</span></span></li>
+                            <li class="feature">20 users included</li>
+                            <li class="feature">10 GB storage</li>
+                            <li class="feature"> prirority Email support</li>
+                            <li class="feature">Help center access</li>
+                            <li> <button class="btn" type="button">Get Started</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-lg-4 col-xs-10 plan">
+                    <h1 class="plan3">Enterprise</h1>
+                    <div class="summary">
+                        <ul class="pricing-summary">
+                            <li> <span class="rate1"> <span class="dollar">&dollar; 29</span> <span class="month">/
+                                        mo</span></span></li>
+                            <li class="feature">30 users included</li>
+                            <li class="feature">15 GB storage</li>
+                            <li class="feature"> phone and Email support</li>
+                            <li class="feature">Help center access</li>
+                            <li> <button class="btn" type="button">Contact Us</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+    <hr style="margin:50px auto; width:90%; ">
+    <footer>
+        <div class="row foot">
+            <div class="col-lg-3 col-xs-10 fr1">
+                <img src="1-.jpeg" alt="" width="35px" height="35px">
+                <span class="fs1"> &copy; 2017-2018</span>
+
+            </div>
+            <div class="col-lg-3 col-xs-10" fr2>
+                <span class="hed">
+                    Features
+                </span>
+                <div class="features">
+
+                    <ul>
+                        <li> <a href="http://#" target="_blank"> Cool staff</a> </li>
+                        <li> <a href="http://#" target="_blank"> Random features</a> </li>
+                        <li> <a href="http://#" target="_blank"> Team features </a> </li>
+                        <li> <a href="http://#" target="_blank">Stuff for devlopers</a> </li>
+                        <li> <a href="http://#" target="_blank"> Another one </a> </li>
+                        <li> <a href="http://#" target="_blank"> Last time</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-xs-10 fr3">
+                <span class="hed">Resources</span>
+                <div class="resources">
+                    <ul>
+                        <li> <a href="http://#" target="_blank">Resource</a> </li>
+                        <li> <a href="http://#" target="_blank">Resource name</a> </li>
+                        <li> <a href="http://#" target="_blank">Anathor resources</a> </li>
+                        <li> <a href="http://#" target="_blank">Final resources</a> </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xs-10 fr4">
+                <span class="hed">
+                    About
+                </span>
+                <div class="about">
+                    <ul>
+                        <li> <a href="http://#" target="_blank">Team</a> </li>
+                        <li> <a href="http://#" target="_blank">Locations</a> </li>
+                        <li> <a href="http://#" target="_blank">Privacy</a> </li>
+                        <li> <a href="http://#" target="_blank">Teams</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

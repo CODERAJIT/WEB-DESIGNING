@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling link & buttons</title>
+    <style>
+        .container {
+            border: 4px solid blueviolet;
+            border-radius: 5px;
+            margin: 40px auto;
+            width: 660px;
+            padding: 30px;
+            background-color: aqua;
+
+        }
+
+        .btn {
+            background-color: wheat;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+
+        a,
+        button {
+            color: rgb(6, 196, 22);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(50, 42, 165);
+            background-color: rgb(118, 186, 231);
+        }
+
+        a:active {
+            background-color: rgb(14, 197, 14);
+        }
+
+        a:visited {
+            background-color: salmon;
+        }
+
+        button:hover {
+            color: rgb(50, 42, 165);
+            background-color: rgb(118, 186, 231);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center;text-decoration:underline;font-style: italic;">styling link & buttos</h2>
+    <div id="cont1" class="container">
+        <h2>this is my heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas dicta esse nostrum saepe.</p>
+        <a href="https://www.itvedant.com/" class="btn" target="_blank">Read More</a>
+        <a href="https://www.geeksforgeeks.org/python-exercises-practice-questions-and-solutions/" class="btn" target="_blank">Read
+            Mores</a>
+        <button class="btn">Contact Us</button>
+
+    </div>
+</body>
+
+</html>

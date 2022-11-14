@@ -1,0 +1,45 @@
+.main {
+width: 300px;
+margin: 5px auto;
+border-top: none;
+margin-top: 100px;
+border: 1px solid black;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+}
+table{
+    width: 100%;
+}
+td{
+    width:25%;
+}
+#calbody{
+     margin-top: 5px;
+     border-top: 1px dotted rgb(88, 86, 86);
+     
+
+}
+input[type=button]{
+    width:100%;
+    background-color: rgb(47, 17, 117);
+    color: white;
+    height: 60px;
+    font-size: 30px;
+    border: 2px solid red;
+
+
+}
+input[type="text"] {
+    width: 98%;
+    height: 100px;
+    border: 1px solid black;
+    border-bottom-left-radius: 0px;
+    background-color: aquamarine;
+    color: black;
+    font-size: 30px;
+    border-radius: 28px;
+    font-weight: 700;
+    text-align: right;
+
+}
+

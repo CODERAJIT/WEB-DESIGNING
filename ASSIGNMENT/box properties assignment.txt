@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> box perporties</title>
+    <style>
+        .col1 {
+            width: 300px;
+            float: left;
+            border: 5px solid whitesmoke;
+            margin: 30px 10px;
+            text-align: justify;
+            word-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="col1">
+        <h1> Box1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusantium nostrum ex, harum ipsum quibusdam
+            saepe exercitationem inventore molestiae est! Nobis voluptas eius amet quas nihil ipsum aut! Amet, dolor.
+            Earum excepturi accusantium eum inventore, tempore modi eos ducimus omnis numquam totam nihil ab cupiditate
+            architecto consequatur harum. Fugit velit, consequatur ea tempore reprehenderit voluptas recusandae maxime
+            quas quaerat explicabo! Velit labore quos eveniet assumenda itaque. Nisi praesentium eligendi tenetur quam
+            consectetur. Dicta fuga animi est sapiente blanditiis quo eligendi deserunt. Saepe, iure, reprehenderit
+            obcaecati facilis, consectetur enim tempora laboriosam et nihil dolor molestias dicta molestiae nostrum non
+            aperiam praesentium.</p>
+    </div>
+    <div class="col1">
+        <h1> Box2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusantium nostrum ex, harum ipsum quibusdam
+            saepe exercitationem inventore molestiae est! Nobis voluptas eius amet quas nihil ipsum aut! Amet, dolor.
+            Earum excepturi accusantium eum inventore, tempore modi eos ducimus omnis numquam totam nihil ab cupiditate
+            architecto consequatur harum. Fugit velit, consequatur ea tempore reprehenderit voluptas recusandae maxime
+            quas quaerat explicabo! Velit labore quos eveniet assumenda itaque. Nisi praesentium eligendi tenetur quam
+            consectetur. Dicta fuga animi est sapiente blanditiis quo eligendi deserunt. Saepe, iure, reprehenderit
+            obcaecati facilis, consectetur enim tempora laboriosam et nihil dolor molestias dicta molestiae nostrum non
+            aperiam praesentium.</p>
+    </div><div class="col1">
+        <h1> Box3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusantium nostrum ex, harum ipsum quibusdam
+            saepe exercitationem inventore molestiae est! Nobis voluptas eius amet quas nihil ipsum aut! Amet, dolor.
+            Earum excepturi accusantium eum inventore, tempore modi eos ducimus omnis numquam totam nihil ab cupiditate
+            architecto consequatur harum. Fugit velit, consequatur ea tempore reprehenderit voluptas recusandae maxime
+            quas quaerat explicabo! Velit labore quos eveniet assumenda itaque. Nisi praesentium eligendi tenetur quam
+            consectetur. Dicta fuga animi est sapiente blanditiis quo eligendi deserunt. Saepe, iure, reprehenderit
+            obcaecati facilis, consectetur enim tempora laboriosam et nihil dolor molestias dicta molestiae nostrum non
+            aperiam praesentium.</p>
+    </div><div class="col1">
+        <h1> Box4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusantium nostrum ex, harum ipsum quibusdam
+            saepe exercitationem inventore molestiae est! Nobis voluptas eius amet quas nihil ipsum aut! Amet, dolor.
+            Earum excepturi accusantium eum inventore, tempore modi eos ducimus omnis numquam totam nihil ab cupiditate
+            architecto consequatur harum. Fugit velit, consequatur ea tempore reprehenderit voluptas recusandae maxime
+            quas quaerat explicabo! Velit labore quos eveniet assumenda itaque. Nisi praesentium eligendi tenetur quam
+            consectetur. Dicta fuga animi est sapiente blanditiis quo eligendi deserunt. Saepe, iure, reprehenderit
+            obcaecati facilis, consectetur enim tempora laboriosam et nihil dolor molestias dicta molestiae nostrum non
+            aperiam praesentium.</p>
+    </div>
+</body>
+
+</html>

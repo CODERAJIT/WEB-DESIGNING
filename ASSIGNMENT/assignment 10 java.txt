@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script assignment</title>
+</head>
+
+<body>
+    <h2>java script assignment</h2>
+    <h4> 1. greatest number</h4>
+    <p id="biggernumber"></p>
+    <script>
+        let n1 = 50;
+        let n2 = 40;
+        if (n1 > n2) {
+            document.getElementById("biggernumber").innerHTML = `${n1} is the greated number`;
+        } else {
+            document.getElementById("biggernumber").innerHTML = `${n2} is the greated number`;
+        }
+    </script>
+    <h2> 2. check positive or negetive below</h2>
+    Type Number Here :<input type="number" name="" id="num">
+    <input type="button" value="click to check" onclick="getnumber()">
+    <h2 id="check"></h2>
+    <script>
+        function getnumber() {
+            var num1 = parseInt(document.getElementById("num").value);
+            if (num1 > 0) {
+                document.getElementById("check").innerHTML = "this is positive";
+            }
+            else if (num1 == 0) {
+                document.getElementById("check").innerHTML = "this is zero";
+            }
+            else if (num1 < 0) {
+                document.getElementById("check").innerHTML = "this is negetive";
+            } else {
+                document.getElementById("check").innerHTML = "Please enter a digit";
+            }
+        }
+
+    </script>
+    <h2> 3. simple calculator</h2>
+    <p><input type="number" name="" id="fnum" placeholder="1st number"></p>
+    <select id="op">
+        <option>select operator</option>
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <p><input type="number" name="" id="snum" placeholder="2nd number"></p>
+    <input type="button" value="calculate" id="" onclick="calculator()">
+    <p>
+    <h2 id="resul"></h2>
+    </p>
+    <script>
+
+        function calculator() {
+            let x = document.getElementById("fnum").value;
+            let y = document.getElementById("snum").value;
+            let op = document.getElementById("op").value;
+            switch (op) {
+                case '+':
+                    result = parseInt(x) + parseInt(y);
+                    document.getElementById("resul").innerHTML = result;
+                    break;
+                case '-':
+                    result = parseInt(x) - parseInt(y);
+                    document.getElementById("resul").innerHTML = result;
+                    break;
+                case '*':
+                    result = parseInt(x) * parseInt(y);
+                    document.getElementById("resul").innerHTML = result;
+                    break;
+                case '/':
+                    result = parseInt(x) / parseInt(y);
+                    document.getElementById("resul").innerHTML = result;
+                    break;
+                    default:
+                        document.getEementById("resul").innerHTML = "something error..";
+           }
+
+        }       
+    </script>
+    <h3> 4. sum of 1-100 - </h3>
+    <h4 id="total"></h4>
+    <script>
+        let i=1;
+        let sum=0;
+    
+        while(i<=100){
+            sum= sum+i;
+            i++;
+        } 
+        document.getElementById("total").innerHTML="Total sum of 1 to 100 ="+" "+sum;
+    </script>
+ <br> <br>
+ <h3> 5. factorial of a number</h3>
+ Enter a Number : <input type="number" name="" id="num5">
+  <input type="button" value="click here" onclick="fact()">
+ <h3 id="factorial"></h3>
+ <script>
+     function fact(){
+        let num3 = document.getElementById("num5").value;
+         let f=1;
+        for(i=1; i<=num3;i++){
+            f=i*f;
+        }
+        i=i-1;
+        document . getElementById("factorial").innerHTML= "Factorial" +" "+ i +" "+ "is" +" "+ f;
+    }
+    
+ </script>
+<h2>
+   6.  find to sum of digits
+</h2>
+<p>
+   Enter a Number : <input type="number" name="" id="num6">
+</p>
+<input type="button" value=" click to check" onclick="sumdigit()">
+<h3 id="result6"></h3>
+ <script>
+    function sumdigit(){
+        var num6 , rem6, sum6 =0;
+
+         var num6=parseInt(document.getElementById("num6").value);
+
+        // num6=1245;
+        while(num6){
+            rem6=num6 % 10;
+            sum6=rem6+sum6;
+            num6=Math.floor(num6/10);
+        }
+        // console.log(sum6);
+        document .getElementById("result6") .innerHTML = sum6;
+    }
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>container</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 900px;
+            border: 4px solid red;
+            margin: 40px auto;
+            padding: 10px 10px;
+            border-radius: 10px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-style: italic;
+
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: whitesmoke;
+        }
+
+        /* padding 12px 3px is 12px is in y direction 3px in xdirection */
+        #fruit {
+            float: right;
+            width: 48%;
+        }
+
+        #foods {
+            float: left;
+            width: 48%;
+        }
+
+        #snacks {
+            /* float: left; */
+            width: 100%;
+            clear: left;
+        }
+        p,h1{text-align: justify;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-decoration: underline;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;text-align:center ;">welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>
+                fruits
+            </h3>
+            <p id="fruitpara" class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum delectus
+                aspernatur voluptate! Eveniet sed quis alias, minus vel ipsam ex ad optio a numquam officia impedit
+                modi, facilis natus cumque.</p>
+
+
+        </div>
+        <div id="foods" class="item">
+            <h3>
+                foods
+            </h3>
+            <p id="foodspara" class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta
+                natus consectetur illo doloribus, officiis eum pariatur dolorum adipisci corrupti distinctio nesciunt
+                corporis, obcaecati, eius voluptatem ea cum. Velit eligendi, consectetur corporis, qui itaque laudantium
+                eos pariatur fugiat deserunt impedit aut libero voluptate consequuntur quibusdam ipsa totam in quisquam
+                ea!Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, delectus!Lorem ipsum dolor sit
+                amet.</p>
+
+
+        </div>
+        <div id="snacks" class="item">
+            <h3>
+                snacks
+            </h3>
+            <p id="snackspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

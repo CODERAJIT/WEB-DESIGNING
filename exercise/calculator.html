@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="oper1" value="">
+
+<select id="operx">
+<option value="0">plus</option>
+<option value="1">minus</option>
+<option value="2">multiply</option>
+<option value="3">divide</option>
+</select>
+
+<input type="text" id="oper2" value="">
+<input type="button" onClick="calc();" value="=">
+<!-- <input type="text" id="resul" value=""> -->
+<h3 id="resul"></h3>
+    <script>
+
+        function plus(x,z) {
+            return (x + z);
+        }
+
+        function minus(x,z) {
+            return (x - z);
+        }
+
+        function multiply(x,z) {
+            return (x * z);
+        }
+
+        function divide(x,z) {
+            return (x / z);
+        }
+
+        function calc() {
+
+            var x = document.getElementById("oper1").value;
+            var y = document.getElementById("operx").value;
+            var z = document.getElementById("oper2").value;
+            var w = document.getElementById("resul").innerHTML;
+
+            switch (y) {
+                case '0':
+                    w = plus(x, z);
+                    break;
+
+                case '1':
+                    w = minus(x, z);
+                    break;
+
+                case '2':
+                    w = multiply(x, z);
+                    break;
+
+                case '3':
+                    w = divide(x, z);
+                    break;
+
+                default:
+                    w = "Don't really know..";
+            }
+
+        }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .cont{
+            border: 3px solid purple;
+            height: 600px;
+        }
+        .box {
+            border: 2px solid rebeccapurple;
+            width: 150PX;
+            height: 200px;
+            margin: 2px;
+            display: inline-block;
+
+        }
+
+        /* position:static ( :default),absolute,fixed,stiky */
+
+        #card3 {
+            /* relative to with normal position */
+            position: relative;
+            top: 30px;
+            left: 22px;
+        }
+        #card1 {
+            /* take position with parent tag  */
+            position: absolute;
+            top: 30px;
+            left: 122px;
+        }
+        
+        #card7{ position:fixed;
+            top: 100px;
+            right: 20px;
+
+        }
+        #card8{
+            position: sticky;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box" id="card1"></div>
+        <div class="box" id="card2"></div>
+        <div class="box" id="card3"></div>
+        <div class="box" id="card4"></div>
+    </div>
+    <div class="cont">
+        <div class="box" id="card5"></div>
+        <div class="box" id="card6"></div>
+        <div class="box" id="card7"></div>
+        <div class="box" id="card8"></div>
+    </div>
+</body>
+
+</html>

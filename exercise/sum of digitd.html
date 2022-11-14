@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function addDigitsOfNumber()
+{
+  var num, rem, sum=0;
+  num = parseInt(document.getElementById("num").value);
+  while(num !=0)
+  {
+    rem = num%10;
+    sum = sum+rem;
+    num = Math.floor(num/10);
+  }
+  document.getElementById("result").value = sum;
+}
+</script>
+<!-- The condition, of while loop evaluates to be true, because the value of num is not 0, initially
+So program flow goes inside the loop
+There num%10 or 1234%10 or 4 gets initialized to rem. So rem=4
+And sum+rem or 0+4 or 4 gets initialized to sum. So sum=4
+The final statement, Math.floor(num/10) or Math.floor(1234/10) or Math.floor(123.4) or 123 gets initialized to num
+Now again the condition of while loop gets evaluated. Because the value of num is 123 which is not equal to 0, therefore again the condition evaluates to be true
+So program flow again goes inside the loop and evaluates all the three statements
+This process continues until the condition of while loop evaluates to be false -->
+</head>
+<body>
+
+<p>Enter the Number: <input id="num"></p>
+<button onclick="addDigitsOfNumber()">Add Digits Of Number</button>
+<p>Result = <input id="result"></p>
+
+</body>
+</html>

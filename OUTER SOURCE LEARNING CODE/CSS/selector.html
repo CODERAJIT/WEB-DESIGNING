@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selecter</title>
+    <style>
+        p{color: slateblue;}
+    </style>
+    <!-- this is element selector -->
+    <style>
+        #secondpara{
+            color: brown;
+        } 
+        /* # is used as id selector */
+        .bgblue{
+            background-color: red;
+        }
+    </style>
+    <style>
+        .nick{
+            color: blue;
+            /* <!-- . is used as class selector --> */
+        }
+        
+    </style>
+     <style>
+        #blue,span{
+            color:green;
+            background-color:red
+        }
+        </style>
+        <!-- this is grouping selector -->
+        <!-- /* if p is contained by any li which is contained by div */
+        /* div li p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+    
+        /* if p is right inside div then this CSS will be applied */
+        /* div > p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+    
+        /* if p is right after div i.e p is the next sibling of div*/
+        /* div + p{
+            color: white;
+            background-color: rgb(238, 137, 137);
+        } */ -->
+    
+</head>
+<body>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, est.</p>
+    <p id="secondpara" class="bgblue"> Lorem ipsum another dolor sit amet consectetur adipisicing elit. Vero, est.</p>
+    <div>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+    </div>
+    <h3 class="nick bgblue" >Lorem ipsum dolor sit amet. 2nd</h3>
+    <span> this is span </span>
+    <div id="blue">
+        this is divsion</div>
+</body>
+</html> 
